@@ -66,12 +66,14 @@ namespace SpoprtsStore
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(login =="admin" && password == "admin")
+            if (login == "admin" && password == "admin")
             {
                 this.Hide();
                 Import import = new Import();
                 import.Show();
             }
+
+
             try
             {
                 string login = textBox1.Text.ToString();
