@@ -19,6 +19,9 @@ namespace SpoprtsStore
         }
         string conString = data.conStr;
 
+        string login = "admin";
+        string password = "admin";
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -63,6 +66,12 @@ namespace SpoprtsStore
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if(login =="admin" && password == "admin")
+            {
+                this.Hide();
+                Import import = new Import();
+                import.Show();
+            }
             try
             {
                 string login = textBox1.Text.ToString();
@@ -141,6 +150,11 @@ namespace SpoprtsStore
             {
                 textBox2.PasswordChar = '*';
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
