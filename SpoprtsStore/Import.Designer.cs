@@ -1,5 +1,5 @@
 ﻿
-namespace SpoprtsStore
+namespace Security
 {
     partial class Import
     {
@@ -29,31 +29,22 @@ namespace SpoprtsStore
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.button1.Location = new System.Drawing.Point(29, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Востановление";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.button2.Location = new System.Drawing.Point(29, 87);
+            this.button2.Location = new System.Drawing.Point(29, 39);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(201, 42);
             this.button2.TabIndex = 1;
             this.button2.Text = "Импорт";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -74,6 +65,17 @@ namespace SpoprtsStore
             this.comboBox1.Size = new System.Drawing.Size(201, 21);
             this.comboBox1.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.button1.Location = new System.Drawing.Point(29, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(201, 42);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Востановление";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Import
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,10 +93,9 @@ namespace SpoprtsStore
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

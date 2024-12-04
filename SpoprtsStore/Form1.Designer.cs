@@ -96,7 +96,7 @@ namespace SpoprtsStore
             this.textBox1.Size = new System.Drawing.Size(179, 20);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "admin";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+          
             // 
             // textBox2
             // 
@@ -106,7 +106,7 @@ namespace SpoprtsStore
             this.textBox2.Size = new System.Drawing.Size(179, 20);
             this.textBox2.TabIndex = 5;
             this.textBox2.Text = "admin";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+           
             // 
             // label3
             // 
@@ -128,7 +128,7 @@ namespace SpoprtsStore
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Показать пароль";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+           
             // 
             // pictureBox1
             // 

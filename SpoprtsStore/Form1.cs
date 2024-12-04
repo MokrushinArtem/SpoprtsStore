@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Security;
 
 namespace SpoprtsStore
 {
@@ -66,14 +67,12 @@ namespace SpoprtsStore
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (login == "admin" && password == "admin")
+            if(textBox1.Text == "admin" && textBox2.Text == "admin")
             {
                 this.Hide();
-                Import import = new Import();
-                import.Show();
+                Voston voston = new Voston();
+                voston.Show();
             }
-
-
             try
             {
                 string login = textBox1.Text.ToString();
@@ -130,32 +129,7 @@ namespace SpoprtsStore
             {
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked)
-            {
-                textBox2.PasswordChar = default;
-            }
-            else
-            {
-                textBox2.PasswordChar = '*';
-            }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
         }
     }

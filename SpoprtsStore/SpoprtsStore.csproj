@@ -131,6 +131,12 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="Voston.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Voston.Designer.cs">
+      <DependentUpon>Voston.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Voston.resx">
+      <DependentUpon>Voston.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
